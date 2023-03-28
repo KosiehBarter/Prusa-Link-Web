@@ -14,6 +14,8 @@ let currentCameraId = null;
 let cameras = [];
 
 const triggerScheme = {
+  ONE_SEC: "ONE_SEC",
+  TWO_SEC: "TWO_SEC",
   TEN_SEC: "TEN_SEC",
   THIRTY_SEC: "THIRTY_SEC",
   SIXTY_SEC: "SIXTY_SEC",
@@ -24,6 +26,10 @@ const triggerScheme = {
 
 const translateTriggerScheme = (scheme) => {
   switch (scheme) {
+    case triggerScheme.ONE_SEC:
+      return translate("cameras.trigger-scheme.one-sec");
+    case triggerScheme.TWO_SEC:
+      return translate("cameras.trigger-scheme.one-sec");
     case triggerScheme.TEN_SEC:
       return translate("cameras.trigger-scheme.ten-sec");
     case triggerScheme.THIRTY_SEC:
